@@ -1,0 +1,2 @@
+Place your profile photo in this folder and name it profile.jpg.
+The app already points to /profile.jpg in the hero section.

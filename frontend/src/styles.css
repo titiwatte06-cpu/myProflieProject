@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(224, 173, 67, 0.18), transparent 28rem),
+    radial-gradient(circle at 92% 8%, rgba(39, 107, 101, 0.13), transparent 24rem),
+    #f7f0e4;
+}
+
+@layer components {
+  .site-shell {
+    @apply mx-auto w-full max-w-7xl px-5 md:px-8;
+  }
+
+  .section-space {
+    @apply py-12 md:py-20;
+  }
+
+  .section-heading {
+    @apply mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between;
+  }
+
+  .section-kicker {
+    @apply inline-flex items-center gap-2 text-sm font-black uppercase tracking-normal text-rust;
+  }
+
+  .section-title {
+    @apply mt-3 max-w-3xl text-4xl font-black leading-tight text-espresso md:text-6xl;
+  }
+
+  .nav-link {
+    @apply rounded-full px-4 py-2 text-sm font-black text-coffee transition hover:bg-honey/40 hover:text-espresso;
+  }
+
+  .icon-button {
+    @apply grid h-10 w-10 place-items-center rounded-full bg-linen text-espresso ring-1 ring-espresso/10 transition hover:-translate-y-0.5 hover:bg-honey;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-cream px-4 py-2 text-sm font-black uppercase text-rust shadow-soft ring-1 ring-espresso/10;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-teal px-5 py-3 font-black text-linen shadow-soft transition hover:-translate-y-0.5 hover:bg-espresso;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cream px-5 py-3 font-black text-espresso shadow-soft ring-1 ring-espresso/10 transition hover:-translate-y-0.5 hover:bg-honey/80;
+  }
+
+  .feature-panel,
+  .project-card,
+  .detail-card {
+    @apply rounded-[8px] bg-cream shadow-soft ring-1 ring-espresso/10;
+  }
+
+  .portrait-stage {
+    @apply relative mx-auto w-full max-w-[460px] px-5 py-8;
+  }
+
+  .shape {
+    @apply absolute opacity-90;
+  }
+
+  .shape-arc {
+    @apply -left-2 top-10 h-28 w-28 rounded-t-full bg-honey md:h-36 md:w-36;
+  }
+
+  .shape-sun {
+    @apply bottom-20 right-2 h-24 w-24 rounded-full bg-clay md:h-32 md:w-32;
+  }
+
+  .portrait-card {
+    @apply relative z-10 aspect-[4/5] overflow-hidden rounded-[8px] bg-cream shadow-[0_30px_80px_rgba(47,36,31,0.16)] ring-1 ring-espresso/10;
+  }
+
+  .portrait-card::before {
+    content: "";
+    @apply absolute inset-0 bg-[linear-gradient(135deg,#fff8ea,#ead8bd)];
+  }
+
+  .portrait-card img {
+    @apply relative z-10 h-full w-full object-cover;
+  }
+
+  .portrait-fallback {
+    @apply absolute inset-0 grid place-items-center p-8 text-center text-3xl font-black text-coffee;
+  }
+
+  .portrait-caption {
+    @apply relative z-20 -mt-8 ml-auto w-[86%] rounded-[8px] bg-teal p-5 text-linen shadow-soft;
+  }
+
+  .portrait-caption span {
+    @apply block text-sm font-bold text-linen/75;
+  }
+
+  .portrait-caption strong {
+    @apply mt-1 block text-xl font-black;
+  }
+
+  .note-row {
+    @apply flex items-center gap-3 rounded-[8px] bg-linen px-4 py-4 font-black text-espresso;
+  }
+
+  .note-row svg {
+    @apply text-teal;
+  }
+
+  .stack-card {
+    @apply flex min-h-28 items-center gap-4 rounded-[8px] bg-cream p-5 shadow-soft ring-1 ring-espresso/10 transition hover:-translate-y-1 hover:bg-white;
+  }
+
+  .stack-card img {
+    @apply h-12 w-12 object-contain;
+  }
+
+  .stack-card h3 {
+    @apply text-lg font-black text-espresso;
+  }
+
+  .stack-card p {
+    @apply mt-1 text-sm font-bold text-coffee;
+  }
+
+  .stack-badge {
+    @apply inline-flex items-center gap-2 rounded-full bg-linen px-4 py-2 text-sm font-black text-espresso ring-1 ring-espresso/10;
+  }
+
+  .stack-badge.compact {
+    @apply px-3 py-1 text-xs;
+  }
+
+  .stack-badge img {
+    @apply h-5 w-5 object-contain;
+  }
+
+  .project-card {
+    @apply p-5 transition hover:-translate-y-1 hover:shadow-[0_26px_70px_rgba(47,36,31,0.14)] md:p-6;
+  }
+
+  .project-art {
+    @apply relative mb-7 h-36 overflow-hidden rounded-[8px];
+  }
+
+  .project-art.clay {
+    @apply bg-clay;
+  }
+
+  .project-art.teal {
+    @apply bg-teal;
+  }
+
+  .project-art.honey {
+    @apply bg-honey;
+  }
+
+  .project-art span:first-child {
+    @apply absolute -left-10 -top-10 h-28 w-28 rounded-full bg-cream/70;
+  }
+
+  .project-art span:last-child {
+    @apply absolute bottom-5 right-5 h-16 w-28 rounded-full border-[16px] border-cream/70;
+  }
+
+  .project-link {
+    @apply mt-8 inline-flex items-center gap-2 font-black text-teal transition hover:text-rust;
+  }
+
+  .detail-card {
+    @apply p-6 md:p-8;
+  }
+
+  .detail-card p:last-child {
+    @apply mt-4 text-lg font-semibold leading-8 text-coffee;
+  }
+
+  .highlight-card {
+    @apply flex items-center gap-4 rounded-[8px] bg-cream px-5 py-5 text-lg font-black text-espresso shadow-soft ring-1 ring-espresso/10;
+  }
+
+  .highlight-card span {
+    @apply h-4 w-4 rounded-full bg-clay;
+  }
+
+  .footer-panel {
+    @apply rounded-[8px] bg-espresso p-7 text-linen shadow-soft md:flex md:items-end md:justify-between md:p-10;
+  }
+
+  .footer-button {
+    @apply mt-8 inline-flex items-center gap-2 rounded-full bg-linen px-5 py-3 font-black text-espresso transition hover:-translate-y-0.5 hover:bg-honey md:mt-0;
+  }
+}
