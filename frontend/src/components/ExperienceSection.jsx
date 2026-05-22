@@ -57,7 +57,17 @@ export default function ExperienceSection() {
             return (
               <article className="journey-card" key={`${item.type}-${item.title}`}>
                 <div className={`org-mark ${item.tone}`}>
-                  <Icon size={24} />
+                  {item.logo ? (
+                    <img
+                      src={item.logo}
+                      alt={`${item.title} logo`}
+                      onError={(event) => {
+                        event.currentTarget.style.display = "none";
+                      }}
+                    />
+                  ) : (
+                    <Icon size={24} />
+                  )}
                   <span>{item.mark}</span>
                 </div>
                 <div>
