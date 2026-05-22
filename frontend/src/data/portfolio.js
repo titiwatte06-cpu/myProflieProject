@@ -50,6 +50,11 @@ export const stacks = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
   },
   {
+    name: "NestJs",
+    group: "Backend",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+  },
+  {
     name: "PostgreSQL",
     group: "Database",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
@@ -64,6 +69,7 @@ export const stacks = [
     group: "ORM",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
   },
+  
   {
     name: "Tailwind CSS",
     group: "Styling",
