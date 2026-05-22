@@ -13,6 +13,9 @@ export default function Navbar() {
           <a className="nav-link hidden sm:inline-flex" href="#work">
             Work
           </a>
+          <a className="nav-link hidden sm:inline-flex" href="#journey">
+            Journey
+          </a>
           <a className="nav-link hidden sm:inline-flex" href="#stack">
             Stack
           </a>

@@ -61,6 +61,87 @@ export const stacks = [
   },
 ];
 
+export const journey = [
+  {
+    title: "Thammasat University",
+    subtitle: "Faculty of Sociology and Anthropology",
+    detail: "Graduated with a social science background that supports research, communication, and understanding people.",
+    type: "Education",
+    icon: "graduation",
+    mark: "TU",
+    tone: "honey",
+  },
+  {
+    title: "Generation Thailand",
+    subtitle: "Junior Software Developer Program",
+    detail: "Joined a hands-on software development program focused on practical coding, teamwork, and career readiness.",
+    type: "Program",
+    icon: "code",
+    mark: "GEN",
+    tone: "teal",
+  },
+  {
+    title: "Rajamangala University of Technology Rattanakosin",
+    subtitle: "Educational Officer",
+    detail: "Worked in academic administration, coordination, documentation, and supporting education workflows.",
+    type: "Work",
+    icon: "building",
+    mark: "RMUTR",
+    tone: "sage",
+  },
+  {
+    title: "WOW Park Museum",
+    subtitle: "Attraction Guide",
+    detail: "Guided visitors, communicated experiences clearly, and supported guest-facing operations in an interactive museum.",
+    type: "Work",
+    icon: "spark",
+    mark: "WOW",
+    tone: "clay",
+  },
+  {
+    title: "Bang Lamphu Museum",
+    subtitle: "Internship",
+    detail: "Completed an internship in a cultural museum environment, building experience in public history and visitor learning.",
+    type: "Internship",
+    icon: "landmark",
+    mark: "BLM",
+    tone: "espresso",
+  },
+];
+
+export const credentials = [
+  {
+    title: "TOEIC 830",
+    subtitle: "English communication",
+    icon: "language",
+  },
+  {
+    title: "CapCut",
+    subtitle: "Short-form video editing",
+    icon: "video",
+  },
+  {
+    title: "Adobe Premiere Pro",
+    subtitle: "Video production workflow",
+    icon: "film",
+  },
+  {
+    title: "SPSS",
+    subtitle: "Statistical analysis",
+    icon: "chart",
+  },
+  {
+    title: "Excel",
+    subtitle: "Data organization and reporting",
+    icon: "sheet",
+  },
+  {
+    title: "Power BI",
+    subtitle: "Dashboard and insight design",
+    icon: "dashboard",
+  },
+];
+
 export const projects = [
   {
     slug: "roomly-booking",
