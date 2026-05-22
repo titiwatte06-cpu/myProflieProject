@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { profile } from "../data/portfolio.js";
+import image from "../proflie/myprofilecard.png";
 
 export default function Hero() {
   return (
@@ -32,7 +33,7 @@ export default function Hero() {
         <div className="shape shape-sun" />
         <div className="portrait-card">
           <img
-            src="/profile.jpg"
+            src={image}
             alt={`${profile.name} profile`}
             onError={(event) => {
               event.currentTarget.style.display = "none";

@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
+  margin: 0;  min-width: 320px;
   background:
     radial-gradient(circle at 8% 12%, rgba(224, 173, 67, 0.18), transparent 28rem),
     radial-gradient(circle at 92% 8%, rgba(39, 107, 101, 0.13), transparent 24rem),
@@ -119,58 +118,6 @@ body {
 
   .note-row svg {
     @apply text-teal;
-  }
-
-  .timeline-panel {
-    @apply rounded-[8px] bg-cream p-4 shadow-soft ring-1 ring-espresso/10 md:p-5;
-  }
-
-  .journey-card {
-    @apply grid gap-5 border-b border-espresso/10 py-6 last:border-b-0 md:grid-cols-[96px_1fr] md:px-2;
-  }
-
-  .org-mark {
-    @apply flex h-24 w-24 shrink-0 flex-col items-center justify-center rounded-[8px] text-center font-black shadow-soft ring-1 ring-espresso/10;
-  }
-
-  .org-mark span {
-    @apply mt-2 text-sm tracking-normal;
-  }
-
-  .org-mark.honey {
-    @apply bg-honey text-espresso;
-  }
-
-  .org-mark.teal {
-    @apply bg-teal text-linen;
-  }
-
-  .org-mark.sage {
-    @apply bg-sage text-espresso;
-  }
-
-  .org-mark.clay {
-    @apply bg-clay text-linen;
-  }
-
-  .org-mark.espresso {
-    @apply bg-espresso text-linen;
-  }
-
-  .credential-card {
-    @apply flex items-center gap-4 rounded-[8px] bg-linen p-4 ring-1 ring-espresso/10;
-  }
-
-  .credential-icon {
-    @apply grid h-12 w-12 shrink-0 place-items-center rounded-full bg-cream text-teal shadow-soft ring-1 ring-espresso/10;
-  }
-
-  .credential-card h4 {
-    @apply text-lg font-black text-espresso;
-  }
-
-  .credential-card p {
-    @apply mt-1 text-sm font-bold text-coffee;
   }
 
   .stack-card {
